@@ -44,12 +44,7 @@ async function initApp() {
     app.use(ToastService);
     app.directive('tooltip', Tooltip);
     app.directive('ripple', Ripple);
-    app.component("Toast", Toast);
-    app.component('DatePicker', DatePicker);
-    app.component('ConfirmDialog', ConfirmDialog);
-    app.component("ConfirmPopup", ConfirmPopup);
-    app.component('Select', Select);
-    app.component('Popover', Popover);
+
 
     await useSettingsStore().loadSettings();
 
